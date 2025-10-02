@@ -81,6 +81,7 @@ document.body.append(card);
 // figure > figcaption + img .evolution
 
 function choosePokemon() {
+  card.innerHTML = ``;
   let theChosenOne = Math.floor(Math.random() * pokemonList.length);
   console.log(theChosenOne);
   for (let pokemon of pokemonList) {
@@ -102,11 +103,11 @@ function choosePokemon() {
     const category = document.createElement("p");
     category.textContent = `Category: ${pokemon.category}`;
     const type = document.createElement("p");
-    type.textContent = `Type: ${pokemon.type.join(" ,")}`;
+    type.textContent = `Type: ${pokemon.type.join(", ")}`;
     const strong = document.createElement("p");
     strong.textContent = `Strong against: ${pokemon.strongAgainst.join(" ,")}`;
     const weak = document.createElement("p");
-    weak.textContent = `Weak against: ${pokemon.weakAgainst.join(",")}`;
+    weak.textContent = `Weak against: ${pokemon.weakAgainst.join(", ")}`;
     // Making the evolution-image, and it's content
     const evolutionCard = document.createElement("figure");
     const evolutionTitle = document.createElement("figcaption");
