@@ -1,0 +1,54 @@
+:root {
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: calibri, sans-serif;
+  background-color: mediumseagreen;
+}
+
+.pokemonCard {
+  display: flex;
+  flex-flow: row, wrap;
+}
+
+.pokemonImg {
+  height: 200px;
+}
+
+midSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+h2 {
+}
+
+.textSection {
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+}
+
+figure {
+  display: column;
+}
+
+figcaption {
+  font-size: ;
+  font-weight: ;
+}
+
+.evolutionImg {
+}
