@@ -90,7 +90,7 @@ document.body.append(card);
 // for of loop
 // Create section > figure + section.textSection + figure
 // figure >figcaption.title img.pokemonImg
-// section > h2 + section > article*2 > p*2  | .category .type .strong .weak
+// section > h2 + article > p*4  | .category .type .strong .weak
 // figure > figcaption + img .evolution
 
 function choosePokemon() {
@@ -112,11 +112,7 @@ function choosePokemon() {
     const statsTitle = document.createElement("h2");
     statsTitle.textContent = "Base Stats:";
     // Making a section for the articles, for styling-purposes
-    const textSection = document.createElement("section");
-    textSection.classList.add("textSection");
-    // Making the articles for the actual stats
-    const article1 = document.createElement("article");
-    const article2 = document.createElement("article");
+    const article = document.createElement("article");
     // Making the paragraphs
     const category = document.createElement("p");
     category.textContent = `Category: ${pokemon.category}`;
@@ -137,10 +133,8 @@ function choosePokemon() {
     // Only showing the randomly chosen pokemon
     if (pokemon === pokemonList[theChosenOne]) {
       pokemonImgCard.append(title, pokemonImg);
-      article1.append(type, strong);
-      article2.append(category, weak);
-      textSection.append(article1, article2);
-      midSection.append(statsTitle, textSection);
+      article.append(type, category, strong, weak);
+      midSection.append(statsTitle, article);
       evolutionCard.append(evolutionTitle, evolutionImg);
       card.append(pokemonImgCard, midSection, evolutionCard);
     }

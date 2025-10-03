@@ -24,24 +24,27 @@ h1 {
   margin-left: 8svw;
 }
 
-main {
-  flex: row;
-}
-
 button {
   margin: 10svh auto 5svh 5svw;
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
+  box-shadow: var(--text-shadow);
 }
 
 .pokemonCard {
   display: flex;
   flex-flow: row wrap;
   margin: 5%;
-  justify-content: space-around;
-  align-items: flex-start;
+  gap: 2.5svw;
+  /* justify-content: space-around; */
 }
+
+/* .pokemonImgCard,
+.midSection,
+.evolutionCard {
+  margin-bottom: 4%;
+} */
 
 .pokemonImgCard {
   background-color: var(--imgCard);
@@ -68,10 +71,12 @@ button {
 
 .midSection {
   width: 280px;
-  padding: 7px 15px;
+  padding: 15px;
   border-radius: 15px;
   background-color: var(--imgCard);
   box-shadow: var(--img-shadow);
+  display: flex;
+  flex-direction: column;
 }
 
 h2,
@@ -83,25 +88,24 @@ h2,
   padding-left: 15px;
 }
 
-.textSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 article {
-  width: 45%;
+  width: 65%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 7px;
+  margin-top: 12px;
 }
 
 p {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .evolutionCard {
-  display: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 338px;
   padding: 5px;
   background-color: var(--imgCard);
   border-radius: 15px;

@@ -1,6 +1,7 @@
 const pokemonList = [
   {
     name: "Bulbasaur",
+    evolution: 1,
     evolutionsteps: 3,
     category: "Seed",
     type: ["Grass", "poison"],
@@ -9,6 +10,7 @@ const pokemonList = [
   },
   {
     name: "Charmander",
+    evolution: 1,
     evolutionsteps: 3,
     category: "Lizard",
     type: ["Fire"],
@@ -17,6 +19,7 @@ const pokemonList = [
   },
   {
     name: "Squirtle",
+    evolution: 1,
     evolutionsteps: 3,
     category: "Tiny Turtle",
     type: ["Water"],
@@ -25,6 +28,7 @@ const pokemonList = [
   },
   {
     name: "Caterpie",
+    evolution: 1,
     evolutionsteps: 3,
     category: "Worm",
     type: ["bug"],
@@ -33,6 +37,7 @@ const pokemonList = [
   },
   {
     name: "Weedle",
+    evolution: 1,
     evolutionsteps: 3,
     category: "Hairy Bug",
     type: ["Bug", "poison"],
@@ -41,6 +46,7 @@ const pokemonList = [
   },
   {
     name: "Pidgey",
+    evolution: 1,
     evolutionsteps: 3,
     category: "Tiny Bird",
     type: ["Normal", "flying"],
@@ -49,14 +55,16 @@ const pokemonList = [
   },
   {
     name: "Rattata",
+    evolution: 1,
     evolutionsteps: 2,
     category: "Mouse",
     type: ["nNormal"],
     strongAgainst: ["Ghost"],
     weakAgainst: ["Fighting"],
   },
-  {
+    {
     name: ,
+    evolution: 1
     evolutionsteps: ,
     category: ,
     type: [],
@@ -65,6 +73,7 @@ const pokemonList = [
   }
     {
     name: ,
+    evolution: 1,
     evolutionsteps: ,
     category: ,
     type: [],
@@ -73,6 +82,7 @@ const pokemonList = [
   }
     {
     name: ,
+    evolution: 1,
     evolutionsteps: ,
     category: ,
     type: [],
@@ -81,6 +91,7 @@ const pokemonList = [
   }
     {
     name: ,
+    evolution: 1,
     evolutionsteps: ,
     category: ,
     type: [],
@@ -89,6 +100,7 @@ const pokemonList = [
   }
     {
     name: ,
+    evolution: 1,
     evolutionsteps: ,
     category: ,
     type: [],
@@ -97,6 +109,7 @@ const pokemonList = [
   }
     {
     name: ,
+    evolution: 1,
     evolutionsteps: ,
     category: ,
     type: [],
@@ -107,8 +120,9 @@ const pokemonList = [
 
 /******************************************************************************
 Copy-paste empty object for pokemon
-{
+    {
     name: ,
+    evolution: 1,
     evolutionsteps: ,
     category: ,
     type: [],
