@@ -1,5 +1,7 @@
 :root {
-  --text-shadow: 1px 1px #262626, -0.8px -0.8px rgba(250, 240, 230, 0.85);
+  --imgCard: rgba(250, 240, 230, 0.8);
+  --text-shadow: 1px 1px #262626, -0.5px -0.5px rgba(250, 240, 230, 0.85);
+  --img-shadow: 2.5px 2.5px #4d4d4d;
 }
 
 * {
@@ -16,7 +18,7 @@ body {
 h1 {
   font-family: Christmas stories, monospace;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 800;
   text-shadow: var(--text-shadow);
   margin-top: 5svw;
   margin-left: 8svw;
@@ -29,59 +31,79 @@ button {
   display: flex;
   flex-flow: row wrap;
   margin: 5%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.pokemonImgCard {
+  background-color: var(--imgCard);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--img-shadow);
+}
+
+.pokemonImgCard figcaption {
+  font-family: Christmas stories, monospace;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 7px;
+  padding: 7px 15px;
 }
 
 .pokemonImg {
   height: 250px;
   width: 250px;
-  background-color: rgba(250, 240, 230, 0.85);
-  border-radius: 20px;
-  padding: 5px;
-  margin: 5%;
 }
 
-midSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  width: 50svw;
-  padding: 5px;
+.midSection {
+  width: 280px;
+  padding: 7px 15px;
+  border-radius: 15px;
+  background-color: var(--imgCard);
+  box-shadow: var(--img-shadow);
 }
 
-h2 {
+h2,
+.evolutionCard figcaption {
   font-family: Christmas stories, monospace;
-  letter-spacing: 2px;
-  text-shadow: var(--text-shadow);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding-left: 15px;
 }
 
 .textSection {
   display: flex;
   flex-direction: row;
-  gap: 2%;
+  justify-content: space-around;
 }
 
 article {
+  width: 45%;
   display: flex;
-  flex-flow: column wrap;
-  max-width: 200px;
+  flex-direction: column;
+  padding: 7px;
 }
 
 p {
   margin-bottom: 7px;
 }
 
-figure {
+.evolutionCard {
   display: column;
   padding: 5px;
-}
-
-figcaption {
-  font-size: 20px;
-  font-weight: 500;
+  background-color: var(--imgCard);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: var(--img-shadow);
 }
 
 .evolutionImg {
-  border: 2px solid #262626;
+  /* border: 1px solid #262626; */
   border-radius: 15px;
+  margin: 5px;
+  height: 250px;
 }

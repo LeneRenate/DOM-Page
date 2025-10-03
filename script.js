@@ -87,14 +87,10 @@ const card = document.createElement("section");
 card.classList.add("pokemonCard");
 document.body.append(card);
 
-// const fruitSection = document.createElement("section");
-// fruitSection.classList.add("fruit-section");
-// document.body.append(fruitSection);
-
-// regular for loop?
-// Create section > img + section.textSection + figure
-// img > .pokemonImg
-// section > h2 + article*2 > p*2  | .category .type .strong .weak
+// for of loop
+// Create section > figure + section.textSection + figure
+// figure >figcaption.title img.pokemonImg
+// section > h2 + section > article*2 > p*2  | .category .type .strong .weak
 // figure > figcaption + img .evolution
 
 function choosePokemon() {
@@ -102,19 +98,23 @@ function choosePokemon() {
   let theChosenOne = Math.floor(Math.random() * pokemonList.length);
   console.log(theChosenOne);
   for (let pokemon of pokemonList) {
-    // Making the "profile image", with class and content
+    // Making the "profile image"-card, with class and content
+    const pokemonImgCard = document.createElement("figure");
+    pokemonImgCard.classList.add("pokemonImgCard");
+    // Making the title
+    const title = document.createElement("figcaption");
+    title.textContent = `${pokemon.name}`;
     const pokemonImg = document.createElement("img");
-    pokemonImg.classList.add("pokemonImg");
     pokemonImg.src = `./images/${pokemon.name}.png`;
-    // Making the text-section
+    // Making the midsection with stats
     const midSection = document.createElement("section");
     midSection.classList.add("midSection");
-    // Making the title
-    const title = document.createElement("h2");
-    title.textContent = `${pokemon.name}`;
-    // Making the articles-section, and articles
+    const statsTitle = document.createElement("h2");
+    statsTitle.textContent = "Base Stats:";
+    // Making a section for the articles, for styling-purposes
     const textSection = document.createElement("section");
     textSection.classList.add("textSection");
+    // Making the articles for the actual stats
     const article1 = document.createElement("article");
     const article2 = document.createElement("article");
     // Making the paragraphs
@@ -128,6 +128,7 @@ function choosePokemon() {
     weak.textContent = `Weak against: ${pokemon.weakAgainst.join(", ")}`;
     // Making the evolution-image, and it's content
     const evolutionCard = document.createElement("figure");
+    evolutionCard.classList.add("evolutionCard");
     const evolutionTitle = document.createElement("figcaption");
     evolutionTitle.textContent = `The evolution steps of ${pokemon.name}:`;
     const evolutionImg = document.createElement("img");
@@ -135,12 +136,13 @@ function choosePokemon() {
     evolutionImg.src = `./images/evolution/${pokemon.name}.png`;
     // Only showing the randomly chosen pokemon
     if (pokemon === pokemonList[theChosenOne]) {
+      pokemonImgCard.append(title, pokemonImg);
       article1.append(type, strong);
       article2.append(category, weak);
-      midSection.append(title, textSection);
       textSection.append(article1, article2);
+      midSection.append(statsTitle, textSection);
       evolutionCard.append(evolutionTitle, evolutionImg);
-      card.append(pokemonImg, midSection, evolutionCard);
+      card.append(pokemonImgCard, midSection, evolutionCard);
     }
   }
 }
