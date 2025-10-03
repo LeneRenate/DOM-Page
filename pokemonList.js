@@ -87,7 +87,7 @@ export const pokemonList = [
     category: "Mouse",
     type: ["Ground"],
     strongAgainst: ["Electric", "poison", "rock"],
-    weakAgainst: [],
+    weakAgainst: ["Water", "grass", "ice"],
   },
   {
     name: "Nidoran♀",
