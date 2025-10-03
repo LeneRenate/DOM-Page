@@ -64,13 +64,13 @@ const pokemonList = [
   },
   {
     name: "Spearow",
-    evolution: 1
+    evolution: 1,
     evolutionsteps: 2,
     category: "Tiny bird",
     type: ["Normal", "flying"],
     strongAgainst: ["Ground", "ghost", "bug", "grass"],
     weakAgainst: ["Rock", "electric", "ice"],
-  }
+  },
   {
     name: "Ekans",
     evolution: 1,
@@ -79,7 +79,7 @@ const pokemonList = [
     type: ["Poison"],
     strongAgainst: ["Fighting", "poison", "bug", "grass", "fairy"],
     weakAgainst: ["Ground", "psychic"],
-  }
+  },
   {
     name: "Sandshrew",
     evolution: 1,
@@ -88,7 +88,7 @@ const pokemonList = [
     type: ["Ground"],
     strongAgainst: ["Electric", "poison", "rock"],
     weakAgainst: [],
-  }
+  },
   {
     name: "Nidoran♀",
     evolution: 1,
@@ -97,7 +97,7 @@ const pokemonList = [
     type: ["Poison"],
     strongAgainst: ["Fighting", "poison", "bug", "grass", "fairy"],
     weakAgainst: ["Ground", "psychic"],
-  }
+  },
   {
     name: "Nidoran♂",
     evolution: 1,
@@ -106,43 +106,70 @@ const pokemonList = [
     type: ["Poison"],
     strongAgainst: ["Fighting", "poison", "bug", "grass", "fairy"],
     weakAgainst: ["Ground", "psychic"],
-  }
+  },
   {
-    name: ,
+    name: "Clefairy",
     evolution: 1,
-    evolutionsteps: ,
-    category: ,
-    type: [],
-    strongAgainst: [],
-    weakAgainst: [],
-  }
+    evolutionsteps: 2,
+    category: "Fairy",
+    type: ["Fairy"],
+    strongAgainst: ["Dragon", "fighting", "bug", "dark"],
+    weakAgainst: ["Poison", "steel"],
+  },
   {
-    name: ,
+    name: "Vulpix",
     evolution: 1,
-    evolutionsteps: ,
-    category: ,
-    type: [],
-    strongAgainst: [],
-    weakAgainst: [],
-  }
+    evolutionsteps: 2,
+    category: "Fox",
+    type: ["Fire"],
+    strongAgainst: ["Bug", "grass", "steel", "fire", "ice", "fairy"],
+    weakAgainst: ["Water", "ground", "rock"],
+  },
   {
-    name: ,
+    name: "Jigglypuff",
     evolution: 1,
-    evolutionsteps: ,
-    category: ,
-    type: [],
-    strongAgainst: [],
-    weakAgainst: [],
-  }
+    evolutionsteps: 2,
+    category: "Balloon",
+    type: ["Normail", "fairy"],
+    strongAgainst: ["Ghost", "dragon", "bug", "dark"],
+    weakAgainst: ["Poison", "steel"],
+  },
   {
-    name: ,
+    name: "Zubat",
     evolution: 1,
-    evolutionsteps: ,
-    category: ,
-    type: [],
-    strongAgainst: [],
-    weakAgainst: [],
-  }
+    evolutionsteps: 2,
+    category: "Bat",
+    type: ["Poison", "flying"],
+    strongAgainst: ["Ground", "fighting", "poison", "bug", "grass", "fairy"],
+    weakAgainst: ["Rosck", "electric", "psychic", "ice"],
+  },
+  {
+    name: "Oddish",
+    evolution: 1,
+    evolutionsteps: 3,
+    category: "Weed",
+    type: ["Grass", "poison"],
+    strongAgainst: ["Fighting", "water", "grass", "electric", "fairy"],
+    weakAgainst: ["Flying", "ice", "fire", "psychic"],
+  },
+  {
+    name: "Paras",
+    evolution: 1,
+    evolutionsteps: 2,
+    category: "Mushroom",
+    type: ["Bug", "grass"],
+    strongAgainst: ["Fighting", "ground", "water", "grass", "electric"],
+    weakAgainst: ["Flying", "fire", "poison", "rock", "bug", "ice"],
+  },
+  {
+    name: "Venonat",
+    evolution: 1,
+    evolutionsteps: 2,
+    category: "Insect",
+    type: ["Bug", "poison"],
+    strongAgainst: ["Fighting", "grass", "poison", "bug", "fairy"],
+    weakAgainst: ["Flying", "rock", "fire", "psychic"],
+  },
 ];
 /******************************************************************************
     {
@@ -155,7 +182,6 @@ const pokemonList = [
     weakAgainst: ["Ground"],
   }
     ******************************************************************************/
-
 
 /******************************************************************************
 Copy-paste empty object for pokemon
