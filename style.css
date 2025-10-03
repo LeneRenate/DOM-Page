@@ -24,16 +24,30 @@ h1 {
   margin-left: 8svw;
 }
 
+#tagline {
+  margin-left: 8svw;
+}
+
 button {
   margin: 10svh auto 5svh 5svw;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+}
+
+#pokeballBtn {
   height: 100px;
   width: 100px;
-  border-radius: 50%;
-  box-shadow: var(--text-shadow);
 }
 
 button:hover {
   cursor: pointer;
+}
+
+button:active {
+  transform: rotate(15deg);
 }
 
 /* The full and complete card */
@@ -56,7 +70,7 @@ button:hover {
 .pokemonImgCard figcaption {
   font-family: Christmas stories, monospace;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: underline;
   letter-spacing: 2px;
   text-shadow: var(--text-shadow);
@@ -83,8 +97,8 @@ button:hover {
 h2,
 .evolutionCard figcaption {
   font-family: Christmas stories, monospace;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   letter-spacing: 1.5px;
   padding-left: 15px;
 }
@@ -100,6 +114,7 @@ article {
 
 p {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 /* Card to show the evolution */
@@ -107,6 +122,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  min-width: 400px;
   height: 338px;
   padding: 5px;
   background-color: var(--imgCard);

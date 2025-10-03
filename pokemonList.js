@@ -130,7 +130,7 @@ export const pokemonList = [
     evolution: 1,
     evolutionsteps: 2,
     category: "Balloon",
-    type: ["Normail", "fairy"],
+    type: ["Normal", "fairy"],
     strongAgainst: ["Ghost", "dragon", "bug", "dark"],
     weakAgainst: ["Poison", "steel"],
   },
@@ -142,15 +142,6 @@ export const pokemonList = [
     type: ["Poison", "flying"],
     strongAgainst: ["Ground", "fighting", "poison", "bug", "grass", "fairy"],
     weakAgainst: ["Rosck", "electric", "psychic", "ice"],
-  },
-  {
-    name: "Oddish",
-    evolution: 1,
-    evolutionsteps: 3,
-    category: "Weed",
-    type: ["Grass", "poison"],
-    strongAgainst: ["Fighting", "water", "grass", "electric", "fairy"],
-    weakAgainst: ["Flying", "ice", "fire", "psychic"],
   },
   {
     name: "Paras",
@@ -181,6 +172,15 @@ export const pokemonList = [
     strongAgainst: ["Flying", "steel", "electric"],
     weakAgainst: ["Ground"],
   }
+  {
+    name: "Oddish",
+    evolution: 1,
+    evolutionsteps: 3,
+    category: "Weed",
+    type: ["Grass", "poison"],
+    strongAgainst: ["Fighting", "water", "grass", "electric", "fairy"],
+    weakAgainst: ["Flying", "ice", "fire", "psychic"],
+  },
     ******************************************************************************/
 
 /******************************************************************************
