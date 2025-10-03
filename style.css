@@ -12,24 +12,31 @@
 body {
   width: 100svw;
   font-family: monospace;
+  background-image: url(./images/Pokemon-Environment-Background-Template-edit-online.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: mediumseagreen;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
 }
 
 h1 {
-  font-family: Christmas stories, monospace;
+  font-family: delius, monospace;
   font-size: 40px;
   font-weight: 800;
   text-shadow: var(--text-shadow);
-  margin-top: 5svw;
-  margin-left: 8svw;
+  margin-top: 4svw;
 }
 
+h1,
 #tagline {
-  margin-left: 8svw;
+  margin-left: 3svw;
 }
 
 button {
-  margin: 10svh auto 5svh 5svw;
+  margin-top: 5svh;
+  margin-left: 10svw;
   height: 95px;
   width: 95px;
   border-radius: 50%;
@@ -54,9 +61,9 @@ button:active {
 .pokemonCard {
   display: flex;
   flex-flow: row wrap;
-  margin: 5%;
+  margin-left: 5%;
+  margin-top: 15svh;
   gap: 2.5svw;
-  /* justify-content: space-around; */
 }
 
 /* Card for the main image and headline-name  */
@@ -68,11 +75,10 @@ button:active {
 }
 
 .pokemonImgCard figcaption {
-  font-family: Christmas stories, monospace;
-  font-size: 30px;
+  font-family: delius, monospace;
+  font-size: 32px;
   font-weight: 700;
   text-decoration: underline;
-  letter-spacing: 2px;
   text-shadow: var(--text-shadow);
   margin-bottom: 7px;
   padding: 7px 15px;
@@ -96,11 +102,12 @@ button:active {
 
 h2,
 .evolutionCard figcaption {
-  font-family: Christmas stories, monospace;
+  font-family: delius, monospace;
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   padding-left: 15px;
+  margin-top: 5px;
 }
 
 article {
@@ -121,9 +128,8 @@ p {
 .evolutionCard {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-width: 400px;
-  height: 338px;
   padding: 5px;
   background-color: var(--imgCard);
   border-radius: 15px;
@@ -132,7 +138,6 @@ p {
 }
 
 .evolutionImg {
-  /* border: 1px solid #262626; */
   border-radius: 15px;
   margin: 5px;
   height: 250px;
