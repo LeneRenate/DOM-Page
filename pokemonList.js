@@ -1,4 +1,4 @@
-const pokemonList = [
+export const pokemonList = [
   {
     name: "Bulbasaur",
     evolution: 1,
@@ -58,7 +58,7 @@ const pokemonList = [
     evolution: 1,
     evolutionsteps: 2,
     category: "Mouse",
-    type: ["nNormal"],
+    type: ["Normal"],
     strongAgainst: ["Ghost"],
     weakAgainst: ["Fighting"],
   },

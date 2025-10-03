@@ -8,12 +8,15 @@ Goal:
 * Make the button into a pokeball
 
 Future develoopment::
+- Would love to do this with API
 - Can choose "type" of pokemon to get (grass, poison, water...)
 - Fight simulator: You generate two pokemons, and it shows who would (most likely) win in a pokemon battle
 
 ******************************************************************************/
 
 // Need an array of different pokemons to start with. Will expand this, but let's make it work first!
+
+/******************************************************************************
 
 const pokemonList = [
   {
@@ -74,9 +77,11 @@ const pokemonList = [
   },
 ];
 
-/******************************************************************************
-
 ******************************************************************************/
+
+import { pokemonList } from "./pokemonList.js";
+
+console.log(pokemonList);
 
 const randomPokemon = Math.floor(Math.random() * pokemonList.length);
 

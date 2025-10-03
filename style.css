@@ -32,6 +32,11 @@ button {
   box-shadow: var(--text-shadow);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+/* The full and complete card */
 .pokemonCard {
   display: flex;
   flex-flow: row wrap;
@@ -40,12 +45,7 @@ button {
   /* justify-content: space-around; */
 }
 
-/* .pokemonImgCard,
-.midSection,
-.evolutionCard {
-  margin-bottom: 4%;
-} */
-
+/* Card for the main image and headline-name  */
 .pokemonImgCard {
   background-color: var(--imgCard);
   border-radius: 20px;
@@ -69,6 +69,7 @@ button {
   width: 250px;
 }
 
+/* Section for the stats (text) */
 .midSection {
   width: 280px;
   padding: 15px;
@@ -101,6 +102,7 @@ p {
   margin-bottom: 10px;
 }
 
+/* Card to show the evolution */
 .evolutionCard {
   display: flex;
   flex-direction: column;
