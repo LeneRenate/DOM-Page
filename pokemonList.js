@@ -21,7 +21,7 @@ const pokemonList = [
     name: "Squirtle",
     evolution: 1,
     evolutionsteps: 3,
-    category: "Tiny Turtle",
+    category: "Tiny turtle",
     type: ["Water"],
     strongAgainst: ["Steel", "fire", "water", "ice"],
     weakAgainst: ["Grass", "electric"],
@@ -39,7 +39,7 @@ const pokemonList = [
     name: "Weedle",
     evolution: 1,
     evolutionsteps: 3,
-    category: "Hairy Bug",
+    category: "Hairy bug",
     type: ["Bug", "poison"],
     strongAgainst: ["Fighting", "poison", "bug", "grass", "fairy"],
     weakAgainst: ["Fire", "flying", "psychic", "rock"],
@@ -62,16 +62,52 @@ const pokemonList = [
     strongAgainst: ["Ghost"],
     weakAgainst: ["Fighting"],
   },
-    {
-    name: ,
+  {
+    name: "Spearow",
     evolution: 1
-    evolutionsteps: ,
-    category: ,
-    type: [],
-    strongAgainst: [],
+    evolutionsteps: 2,
+    category: "Tiny bird",
+    type: ["Normal", "flying"],
+    strongAgainst: ["Ground", "ghost", "bug", "grass"],
+    weakAgainst: ["Rock", "electric", "ice"],
+  }
+  {
+    name: "Ekans",
+    evolution: 1,
+    evolutionsteps: 2,
+    category: "Snake",
+    type: ["Poison"],
+    strongAgainst: ["Fighting", "poison", "bug", "grass", "fairy"],
+    weakAgainst: ["Ground", "psychic"],
+  }
+  {
+    name: "Sandshrew",
+    evolution: 1,
+    evolutionsteps: 2,
+    category: "Mouse",
+    type: ["Ground"],
+    strongAgainst: ["Electric", "poison", "rock"],
     weakAgainst: [],
   }
-    {
+  {
+    name: "Nidoran♀",
+    evolution: 1,
+    evolutionsteps: 3,
+    category: "Poison pin",
+    type: ["Poison"],
+    strongAgainst: ["Fighting", "poison", "bug", "grass", "fairy"],
+    weakAgainst: ["Ground", "psychic"],
+  }
+  {
+    name: "Nidoran♂",
+    evolution: 1,
+    evolutionsteps: 3,
+    category: "Poison pin",
+    type: ["Poison"],
+    strongAgainst: ["Fighting", "poison", "bug", "grass", "fairy"],
+    weakAgainst: ["Ground", "psychic"],
+  }
+  {
     name: ,
     evolution: 1,
     evolutionsteps: ,
@@ -80,7 +116,7 @@ const pokemonList = [
     strongAgainst: [],
     weakAgainst: [],
   }
-    {
+  {
     name: ,
     evolution: 1,
     evolutionsteps: ,
@@ -89,7 +125,7 @@ const pokemonList = [
     strongAgainst: [],
     weakAgainst: [],
   }
-    {
+  {
     name: ,
     evolution: 1,
     evolutionsteps: ,
@@ -98,16 +134,7 @@ const pokemonList = [
     strongAgainst: [],
     weakAgainst: [],
   }
-    {
-    name: ,
-    evolution: 1,
-    evolutionsteps: ,
-    category: ,
-    type: [],
-    strongAgainst: [],
-    weakAgainst: [],
-  }
-    {
+  {
     name: ,
     evolution: 1,
     evolutionsteps: ,
@@ -117,6 +144,18 @@ const pokemonList = [
     weakAgainst: [],
   }
 ];
+/******************************************************************************
+    {
+    name: "Pikachu",
+    evolution: 1,
+    evolutionsteps: 2,
+    category: "Mouse",
+    type: ["Electric"],
+    strongAgainst: ["Flying", "steel", "electric"],
+    weakAgainst: ["Ground"],
+  }
+    ******************************************************************************/
+
 
 /******************************************************************************
 Copy-paste empty object for pokemon
