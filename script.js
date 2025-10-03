@@ -1,3 +1,20 @@
+/******************************************************************************
+Plan:
+I want to make a random Pokemon generator.
+Starting small, with a limited array of different Pokemons. Using a loop to create "cards" for each. Making a function to choose one pokemon randomly from that array, and only show (append) the card for that specific Pokemon. Connect the function to a button.
+
+Goal:
+* Can choose/click the button several times, and get a new pokemon.
+* Make the button into a pokeball
+
+Future develoopment::
+- Can choose "type" of pokemon to get (grass, poison, water...)
+- Fight simulator: You generate two pokemons, and it shows who would (most likely) win in a pokemon battle
+
+******************************************************************************/
+
+// Need an array of different pokemons to start with. Will expand this, but let's make it work first!
+
 const pokemonList = [
   {
     name: "Bulbasaur",
@@ -91,19 +108,20 @@ function choosePokemon() {
     pokemonImg.src = `./images/${pokemon.name}.png`;
     // Making the text-section
     const midSection = document.createElement("section");
-    midSection.classList.add("textSection");
+    midSection.classList.add("midSection");
     // Making the title
     const title = document.createElement("h2");
     title.textContent = `${pokemon.name}`;
     // Making the articles-section, and articles
     const textSection = document.createElement("section");
+    textSection.classList.add("textSection");
     const article1 = document.createElement("article");
     const article2 = document.createElement("article");
     // Making the paragraphs
     const category = document.createElement("p");
     category.textContent = `Category: ${pokemon.category}`;
     const type = document.createElement("p");
-    type.textContent = `Type: ${pokemon.type.join(", ")}`;
+    type.textContent = `Type: ${pokemon.type.join(" & ")}`;
     const strong = document.createElement("p");
     strong.textContent = `Strong against: ${pokemon.strongAgainst.join(", ")}`;
     const weak = document.createElement("p");
@@ -111,14 +129,14 @@ function choosePokemon() {
     // Making the evolution-image, and it's content
     const evolutionCard = document.createElement("figure");
     const evolutionTitle = document.createElement("figcaption");
-    evolutionTitle.textContent = `The evolution steps of ${pokemon.name}`;
+    evolutionTitle.textContent = `The evolution steps of ${pokemon.name}:`;
     const evolutionImg = document.createElement("img");
     evolutionImg.classList.add("evolutionImg");
     evolutionImg.src = `./images/evolution/${pokemon.name}.png`;
     // Only showing the randomly chosen pokemon
     if (pokemon === pokemonList[theChosenOne]) {
-      article1.append(category, type);
-      article2.append(strong, weak);
+      article1.append(type, strong);
+      article2.append(category, weak);
       midSection.append(title, textSection);
       textSection.append(article1, article2);
       evolutionCard.append(evolutionTitle, evolutionImg);

@@ -1,4 +1,5 @@
 :root {
+  --text-shadow: 1px 1px #262626, -0.8px -0.8px rgba(250, 240, 230, 0.85);
 }
 
 * {
@@ -7,17 +8,36 @@
 }
 
 body {
-  font-family: calibri, sans-serif;
+  width: 100svw;
+  font-family: monospace;
   background-color: mediumseagreen;
+}
+
+h1 {
+  font-family: Christmas stories, monospace;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: var(--text-shadow);
+  margin-top: 5svw;
+  margin-left: 8svw;
+}
+
+button {
 }
 
 .pokemonCard {
   display: flex;
-  flex-flow: row, wrap;
+  flex-flow: row wrap;
+  margin: 5%;
 }
 
 .pokemonImg {
-  height: 200px;
+  height: 250px;
+  width: 250px;
+  background-color: rgba(250, 240, 230, 0.85);
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5%;
 }
 
 midSection {
@@ -25,30 +45,43 @@ midSection {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  width: 50svw;
+  padding: 5px;
 }
 
 h2 {
+  font-family: Christmas stories, monospace;
+  letter-spacing: 2px;
+  text-shadow: var(--text-shadow);
 }
 
 .textSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
 }
 
 article {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  max-width: 200px;
 }
 
 p {
+  margin-bottom: 7px;
 }
 
 figure {
   display: column;
+  padding: 5px;
 }
 
 figcaption {
-  font-size: ;
-  font-weight: ;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .evolutionImg {
+  border: 2px solid #262626;
+  border-radius: 15px;
 }
