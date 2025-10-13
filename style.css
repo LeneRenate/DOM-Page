@@ -1,0 +1,157 @@
+:root {
+  --imgCard: rgba(250, 240, 230, 0.8);
+  --text-shadow: 1px 1px #262626, -0.5px -0.5px rgba(250, 240, 230, 0.85);
+  --img-shadow: 2.5px 2.5px #4d4d4d;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100svw;
+  font-family: monospace;
+  background-image: url(./images/Pokemon-Environment-Background-Template-edit-online.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: mediumseagreen;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: delius, monospace;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: var(--text-shadow);
+  margin-top: 4svw;
+}
+
+h1,
+#tagline {
+  margin-left: 3svw;
+}
+
+button {
+  margin-top: 5svh;
+  margin-left: 10svw;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+}
+
+#pokeballBtn {
+  height: 100px;
+  width: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: rotate(15deg);
+}
+
+/* The full and complete card */
+.pokemonCard {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 5%;
+  margin-top: 15svh;
+  gap: 2.5svw;
+}
+
+/* Card for the main image and headline-name  */
+.pokemonImgCard {
+  background-color: var(--imgCard);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--img-shadow);
+}
+
+.pokemonImgCard figcaption {
+  font-family: delius, monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 7px;
+  padding: 7px 15px;
+}
+
+.pokemonImg {
+  height: 250px;
+  width: 250px;
+}
+
+/* Section for the stats (text) */
+.midSection {
+  width: 280px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--imgCard);
+  box-shadow: var(--img-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+h2,
+.evolutionCard figcaption {
+  font-family: delius, monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+article {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 7px;
+  margin-top: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Card to show the evolution */
+.evolutionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 400px;
+  padding: 5px;
+  background-color: var(--imgCard);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: var(--img-shadow);
+}
+
+.evolutionImg {
+  border-radius: 15px;
+  margin: 5px;
+  height: 250px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    display: flex;
+    flex-flow: column;
+    min-height: 420px;
+    font-size: 12px;
+  }
+  header {
+    text-align: center;
+  }
+  
+}
